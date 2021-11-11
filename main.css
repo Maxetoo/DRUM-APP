@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: white;
+    font-family: cursive;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: xx-large;
+    margin: 1.5rem;
+}
+
+p {
+    font-size: large;
+}
+
+.music-cont {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.pads {
+    background: rgb(184, 33, 33);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pads>div {
+    border-right: black solid 1.5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.pad1 {
+    width: calc(100% / 6);
+    background: blueviolet;
+    height: 100%;
+}
+
+.pad2 {
+    width: calc(100% / 6);
+    background: green;
+    height: 100%;
+}
+
+.pad3 {
+    width: calc(100% / 6);
+    background: yellow;
+    height: 100%;
+}
+
+.pad4 {
+    width: calc(100% / 6);
+    background: red;
+    height: 100%;
+}
+
+.pad5 {
+    width: calc(100% / 6);
+    background: lightblue;
+    height: 100%;
+}
+
+.pad6 {
+    width: calc(100% / 6);
+    background: orangered;
+    height: 100%;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.music-cont>.name {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0;
+}
